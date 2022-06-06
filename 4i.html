@@ -1,0 +1,616 @@
+<html>
+<header>
+<script type="text/javascript" src="cookie.js"></script>
+<style>
+.bordercard{
+	border: 1px solid #059; /* Параметры контура */
+	box-shadow: 0 0 14px 2px #099; /* Параметры свечения */ 
+	border-radius: 10px; /* Делаем кружок */
+    padding: 20px; /* Поля вокруг текста */
+}
+</style>
+<script>
+let nm=0;
+let nm1=0;
+let ruen=0;
+let vcb=[['on Sunday','в воскресенье'],
+['on Monday','в понедельник'],
+['Tuesday','вторник'],
+['Wednesday','среда'],
+['Thursday','четверг'],
+['Friday','пятница'],
+['Saturday','суббота'],
+['to laugh at','смеяться над'],
+['to meet met- met','встречать'],
+['class','урок, класс'],
+['in class','на уроке'],
+['before classes','перед уроками'],
+['after classes','после уроков'],
+['comfortable','удобный'],
+['uniform','форма'],
+['Physical Education (P.E.)','физкультура'],
+['Handicraft','урок труда'],
+['exercise book','тетрадь'],
+['museum','музей'],
+['pencil','карандаш'],
+['half (halves)','половина (половины)'],
+['at the desk','за партой'],
+['classroom','класс'],
+['at the lesson','на уроке'],
+['never','никогда'],
+['on the timetable','в расписании'],
+['Maths','математика'],
+['Art','изо, урок рисования'],
+['Music','музыка, урок музыки'],
+['to study (studied)','учиться, изучать'],
+['a blackboard','доска'],
+['a bookcase','книжный шкаф'],
+['a window','окно'],
+['a door','дверь'],
+['a floor','пол'],
+['a wall','стена'],
+['a picture','картина'],
+['in the picture','на картине'],
+['late','поздний'],
+['to be late for','опоздать на&#8230'],
+['to leave (left)','уезжать, покидать, оставлять'],
+['to leave Moscow','уезжать из Москвы'],
+['to leave for Moscow','уезжать в Москву'],
+['to join somebody','присоединяться к кому-то'],
+['to sing-sang','петь'],
+['a song','песня'],
+['yet','ещё, уже'],
+['to count','считать'],
+['poor','бедный'],
+['to work','работать'],
+['luck','удача'],
+['Good luck!','Удачи!'],
+['By the way','кстати'],
+['age','возраст'],
+['at the age of 6','в возрасте 6 лет'],
+['a pen','ручка'],
+['a rubber','ластик'],
+['a ruler','линейка'],
+['a carpet','ковёр'],
+['outdoors','на свежем воздухе'],
+['difficult','трудный'],
+['easy','лёгкий'],
+['to spend (spent)','тратить, проводить'],
+['a subject','предмет'],
+['to get on (well) with somebody-','ладить с кем-то'],
+['to be over','заканчивать'],
+['famous','знаменитый'],
+['to be famous for-','быть известным чем-то'],
+['important','важный'],
+['to learn-learnt','учить'],
+['a house','дом'],
+['a kitchen','кухня'],
+['a bathroom','ванна'],
+['rather','довольно'],
+['a flower','цветок'],
+['in front of','перед'],
+['behind','за, позади'],
+['far from','далеко от'],
+['a living room','гостиная, зал'],
+['a hall','прихожая'],
+['back','задняя часть чего-то, сзади, назад'],
+['at the back of-','сзади чего-то'],
+['to go by car','ехать на машине'],
+['to shout at somebody -','кричать на кого-то'],
+['a key','ключ'],
+['to lock','закрывать на ключ'],
+['a flat','квартира'],
+['a dining room','столовая'],
+['a sitting room','гостиная'],
+['upstairs','вверх по лестнице'],
+['downstairs','вниз по лестнице'],
+['a sofa','диван'],
+['an armchair','кресло'],
+['a fireplace','камин'],
+['lonely','одинокий'],
+['wonderful','чудесный'],
+['furniture','мебель'],
+['a curtain','занавеска'],
+['a corner','угол'],
+['in the corner of','в углу чего-то'],
+['middle','середина'],
+['in the middle of','посередине'],
+['a mirror','зеркало'],
+['quiet','тихий'],
+['to set the table','накрывать на стол'],
+['to be in a hurry','торопиться'],
+['to describe','описывать'],
+['a wardrobe','шкаф'],
+['next to','рядом с'],
+['a lamp','лампа'],
+['a standard lamp','торшер'],
+['a sink','раковина'],
+['a garden','сад'],
+['opposite','напротив'],
+['a cooker','плита'],
+['to be sure','быть уверенным'],
+['to happen','случаться'],
+['to happen to somebody','случаться с кем-то'],
+['suddenly','вдруг'],
+['a cupboard','буфет, шкаф для посуды'],
+['to believe','верить, полагать'],
+['a fridge','холодильник'],
+['to understand (understood)','понимать'],
+['a town','город (небольшой)'],
+['a city','город (большой)'],
+['a square','площадь, квадрат'],
+['main','главный, основной'],
+['a cinema','кинотеатр (at the cinema- в кинотеатре)'],
+['a theatre','театр (at the theatre- в театре)'],
+['a church','церковь'],
+['a road','дорога'],
+['traffic lights','светофор'],
+['in a year','через год'],
+['already','уже'],
+['just','только что'],
+['ever-','когда-либо'],
+['to build-built-built','строить'],
+['a building','здание'],
+['a bridge','мост'],
+['a century','век'],
+['to become-became- become','становиться, стать'],
+['to be afraid of smb.','бояться кого-то'],
+['to wake up-woke up-woken up-','просыпаться'],
+['to burn -burnt-burnt-',' гореть, сжечь'],
+['dirty','грязный'],
+['rich','богатый'],
+['dark','тёмный'],
+['a capital','столица'],
+['a place','место'],
+['a tower','башня'],
+['square','квадратный'],
+['tall','высокий'],
+['a monument','памятник'],
+['a monument to smb.','памятник кому-либо'],
+['a bell','колокол, звонок'],
+['wide','широкий'],
+['a trip','поездка'],
+['lead-led-led','вести'],
+['a sound','звук'],
+['an architect','архитектор'],
+['a king','король'],
+['a queen','королева'],
+['to travel','путешествоватьть'],
+['to stay','оставаться, останавливаться'],
+['to go by plane','лететь на самолёте'],
+['to go by train','ехать на поезде'],
+['at the railway station','на вокзале'],
+['to go by bus','ехать на автобусе'],
+['at the seaside','на морском побережье'],
+['cheap','дешёвый'],
+['expensive','дорогой'],
+['find- found- found','находить'],
+['fly- flew- flown','летать'],
+['to cry','плакать, кричать'],
+['steal-stole-stolen','воровать'],
+['at the airport','в аэропорту'],
+['a ticket','билет ( a ticket to London,a ticket for a train)'],
+['luggage','багаж'],
+['fast','бытрый, быстро'],
+['to shake','трясти'],
+['to explain','объяснять'],
+['straight','прямой, прямо'],
+['kind','добрый'],
+['voice (to speak in a kind voice)','голос'],
+['sad','грустный'],
+['ugly','уродливый'],
+['forget  forgot  forgotten','  забывать'],
+['a plate','тарелка'],
+['to arrive','приезжать, прибывать'],
+['to arrive at the railway station,','to arrive in London'],
+['to feel-felt-felt','чувствовать'],
+['weak','слабый'],
+['strong','сильный'],
+['silver','серебряный'],
+['perhaps','возможно'],
+['nearly','почти, около'],
+['journey','путешествие'],
+['voyage','морское путешествие'],
+['to go by ship','плыть на корабле'],
+['wind','ветер'],
+['to change','менять'],
+['a through train','прямой поезд'],
+['to be tired of smth','устать от чего-либо'],
+['to miss','опоздать, скучать, пропускать'],
+['catch-caught-caught  ','поймать,'],
+['to catch a train ',' успеть/сесть на поезд'],
+['to be fond of','увлекаться'],
+['to be proud of','гордиться'],
+['a stamp','марка'],
+['a badge','значок'],
+['to collect','собирать'],
+['a collection of stamps','коллекция марок'],
+['a collector','коллекционер'],
+['a coin','монета'],
+['a theme','тема'],
+['thematic','тематический'],
+['special','особенный, специальный'],
+['to specialize in smth','специализироваться в чём- то'],
+['a specialist','специалист'],
+['a quarter','четверть'],
+['a seat','место'],
+['a stage','сцена'],
+['rise  rose risen','подниматься, вставать'],
+['to perform','исполнять, выступать'],
+['a performance','выступление, исполнение'],
+['a performer','исполнитель'],
+['audience','зрители, аудитория'],
+['part','часть, роль'],
+['to take part in','принимать участие в'],
+['to decide','решать'],
+['a feature film','художественный фильм'],
+['a cartoon','мультфильм'],
+['a documentary film','документальный фильм'],
+['besides','кроме того'],
+['to be full of smth','быть наполненным чем-то'],
+['though','хотя'],
+['to take care of','заботиться о'],
+['a land','земля'],
+['a screen','экран'],
+['success','успех'],
+['mean- meant meant','означать, иметь в виду'],
+['tell told-told','говорить'],
+['to tell a lie','солгать'],
+['to tell the truth','сказать правду'],
+['to tell smb about smth','сказать кому-то о чём-то'],
+['also','тоже, также'],
+['to be born','рождаться'],
+['a novel','роман'],
+['few  ','мало (с исчисл. сущ.),'],
+['a few','несколько'],
+['little- ','мало (с неисчисл. сущ.),'],
+['a little','немного'],
+['fewer',' меньше (с исчисл.),'],
+['less','меньше (с неисч.)'],
+['fiction','художественная литература'],
+['to listen to','слушать '],
+['true','правдивый, настоящий, верный'],
+['boring','скучный'],
+['a library','библиотека'],
+['whatever','что бы ни'],
+['whenever','когда бы ни'],
+['wherever','где бы ни, куда бы ни'],
+['to discover','открывать (что-то новое), обнаруживать'],
+['a discovery','открытие'],
+['a discoverer','первооткрыватель'],
+['a sail','парус'],
+['to sail','плыть под парусом'],
+['a sailor (a seaman)','моряк'],
+['to reach','достигать, добираться'],
+['to appear','появляться'],
+['to be interested in smth','быть заинтересованным в чем-то'],
+['an island','остров'],
+['a settlement','поселение'],
+['round','круглый'],
+['together','вместе'],
+['to prepare','готовиться'],
+['turkey','индейка'],
+['hard','тяжело, тяжёлый, трудный'],
+['danger','опасность'],
+['to be in danger','быть в опасности'],
+['to be out of danger','быть вне опасности'],
+['harvest','урожай'],
+['to disappear','исчезать'],
+['God','Бог'],
+['since','с'],
+['native','родной, коренной'],
+['along','вдоль'],
+['a nut','орех'],
+['wood','дерево (материал), лес'],
+['wooden','деревянный'],
+['peace','мир'],
+['peaceful','мирный'],
+['hunt','охотиться'],
+['a hunter','охотник'],
+['to smoke','курить'],
+['friendship','дружба'],
+['to depend on','зависеть от'],
+['independent','независимый'],
+['independence from','независимость от'],
+['fight- fought- fought','бороться, сражаться'],
+['to fight for','бороться за'],
+['to fight against','бороться против'],
+['a fight','драка'],
+['gold','золото, золотой'],
+['golden','золотой (переносное значение), золотистый'],
+['empty','пустой'],
+['to be situated','быть расположенным'],
+['a gun','ружьё'],
+['to protect','защищать, охранять'],
+['dangerous','опасный'],
+['a snake','змея'],
+['a tailor','портной'],
+['through','через'],
+['each','каждый'],
+['each other','друг друга'],
+['a state','государство, штат'],
+['government','правительство'],
+['a magazine','журнал'],
+['a newspaper','газета'],
+['sell- sold-sold','продавать'],
+['a letter','письмо, буква'],
+['own','собственный'],
+['to advise','советовать'],
+['advice','совет'],
+['a person','человек, личность'],
+['personal','личный, частный'],
+['a host','хозяин'],
+['a hostess','хозяйка'],
+['to move','двигать(ся), переезжать'],
+['a rule','правило'],
+['to relax','расслабляться'],
+['maybe','может быть'],
+['a bank','берег'],
+['between','между'],
+['an enemy','враг'],
+['noble','благородный'],
+['honest','честный'],
+['devoted','преданный'],
+['brave','храбрый'],
+['bravery','храбрость'],
+['a birch','берёза'],
+['a top','вершина'],
+['to found','основывать'],
+['a map','карта'],
+['young','молодой'],
+['a stone','камень'],
+['a war','война'],
+['an army','армия'],
+['win-won-won','выигрывать, побеждать'],
+['against','против'],
+['a battle','битва, сражение'],
+['to die','умирать'],
+['to kill','убивать'],
+['victory','победа'],
+['soul','душа'],
+['a heart','сердце'],
+['hospitable','гостеприимный'],
+['real','настоящий'],
+['really','по-настоящему, действительно']];
+let act=[];
+let i=0;
+let unknwi=0;
+let knwi=0;
+let j=0;
+let schet=0;
+
+function vcrd(){
+	let crd=document.getElementById('card');
+	let cntrl=document.getElementById('cntrl');
+	nm1=nm;
+i=Math.floor(nm/50);
+// отладка alert("Текущая позиция:"+nm+" Стартовая позиция:"+nm1+" Позиция: "+act[i]+" Значение показателя: "+Math.floor(act[i]/Math.pow(2,nm%50))% 2);
+		if (act==0) {
+// отладка alert(act+": Новых слов нет!")		
+}
+else{
+i=Math.floor(nm/50);
+	while ((Math.floor(act[i]/Math.pow(2,nm%50))% 2)==0){
+		nm=(nm+1)% vcb.length;
+i=Math.floor(nm/50);
+// отладка alert("Это слово известно, пролистываем дальше.<br> Текущая позиция:"+nm);	
+	}
+	
+	crd.innerHTML=vcb[nm][ruen];
+	/**/
+	}
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+
+}
+function snd(){
+	const audioUrl = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en-us&client=tw-ob&q=' + vcb[nm][ruen];
+    const audio = document.createElement('audio');
+ 	audio.src = audioUrl;
+    audio.hidden = true;
+    audio.autoplay = true;
+    audio.addEventListener('ended', () => audio.remove());
+}
+
+function vis(){
+let opt=document.getElementById('opt');
+let crd=document.getElementById('card');
+let cntrl=document.getElementById('cntrl');
+
+i = Math.floor(vcb.length/50);
+for (j=0;j<i;j++)
+{
+act[j]=Math.pow(2,50)-1;
+}
+act[i]=Math.pow(2,vcb.length%50)-1;
+// отладка alert("Длина массива: "+vcb.length+"Начальное значение показателя: "+act[i]);
+opt.innerHTML= '<form name="lf"><input name="MyButton1" type=button value="Руcский" onClick=ru()><input name="MyButton5" type=button value="Слушать" onClick=snd()></form><br>';
+vcrd();
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+}
+function bgn(){
+nm=0;
+vcrd();
+}
+
+function ru(){
+let crd=document.getElementById('card');
+if (lf.MyButton1.value=="Русский") {
+lf.MyButton1.value="Английский";
+ruen=1;
+}
+else {
+lf.MyButton1.value="Русский";
+ruen=0;
+}
+crd.innerHTML=vcb[nm][ruen];
+}
+function knw(){
+let crd=document.getElementById('card');
+i=Math.floor(nm/50);
+act[i]=act[i]-Math.pow(2,nm%50);
+// отладка alert("Текущая позиция:"+nm+" Значение показателя: "+Math.floor(act[i]/Math.pow(2,nm))% 2);
+nm=(nm+1)% vcb.length;
+schet++;
+vcrd();
+knwi++;
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+snd();
+}
+function cncl(){
+let crd=document.getElementById('card');
+i=Math.floor(nm/50);
+// отладка alert("Текущая позиция:"+nm+" Значение показателя: "+Math.floor(act[i]/Math.pow(2,nm))% 2);
+nm=(nm+1)% vcb.length;
+schet++;
+vcrd();
+snd();
+}
+
+function unknw(){
+let lruen=ruen;
+let crd=document.getElementById('card');
+if (ruen==0) {ruen=1;}
+else{
+ruen=0;}
+crd.innerHTML=vcb[nm][ruen];
+ruen=lruen;
+unknwi++;
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+snd();
+}
+
+function tsv(){
+let k=vcb.length;
+i=Math.floor(k/50);
+for (j=0;j<=i;j++)
+{
+localStorage.setItem(j,act[j]);
+/*alert( localStorage.getItem('test') ); // 1
+document.getElementById('sv').innerHTML+=" "+act[j];
+*/
+}
+localStorage.setItem('start',nm);
+//alert("Сохранилсь "+localStorage.getItem('start')+" позиция");
+}
+/* */
+/*for (j=0;j<k;j++)
+{
+i=Math.floor(j/50);
+if ((Math.floor(act[i]/Math.pow(2,j%50))% 2)==1)
+{
+document.getElementById('sv').innerHTML+='["'+vcb[j][0]+'","'+vcb[j][1]+'"],';
+} 
+else{
+document.getElementById('unsv').innerHTML+='["'+vcb[j][0]+'","'+vcb[j][1]+'"],';
+}
+/*
+}
+
+/**/
+
+
+//let name = "my name";
+//let value = "John Smith"
+// кодирует в my%20name=John%20Smith
+//document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+//cookie.set('act','3',20);
+//// отладка alert("Сохраняем в куки "+document.cookie+" число: "+act);
+function tsvp(){
+let k=vcb.length;
+i=Math.floor(k/50);
+document.getElementById('sts').innerHTML="";
+for (j=0;j<=i;j++)
+{
+document.getElementById('sts').innerHTML+=" "+act[j]+"<br>";
+}
+}
+function tld(){
+nm=0;
+let k=vcb.length;
+i=Math.floor(k/50);
+for (j=0;j<=i;j++)
+{
+act[j]=localStorage.getItem(j);
+/*alert( localStorage.getItem('test') ); // 1
+document.getElementById('sv').innerHTML+=" "+act[j];
+*/
+}
+nm=Number(localStorage.getItem("start"));
+vcrd();
+unknwi=0;
+knwi=0;
+let schet=0;
+
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+// отладка alert(document.cookie); // ...; my%20name=John%20Smith
+// отладка alert("Восстанавливаем из кук "+document.cookie);
+//act= Number.parseInt(cookie.get("act"));
+//// отладка alert("Восстанавливаем из кук число: "+act);
+}
+function ok(){
+nm=0;
+let opt=document.getElementById('opt');
+let crd=document.getElementById('card');
+let cntrl=document.getElementById('cntrl');
+let k=vcb.length;
+i=Math.floor(k/50);
+act=document.load.data1.value.split(/.*\r\n|\r|\n/g);
+for (j=0;j<=i;j++)
+{
+document.getElementById('sts').innerHTML+='<br>'+act[j];
+act[j]=Number(act[j]);
+}
+document.getElementById('sts').innerHTML='<div id="opt"></div><div id="card"></div><div id="cntrl"></div>Невыученные<div id="sv"></div>Выученные<div id="unsv"></div>';
+document.getElementById('opt').innerHTML= '<form name="lf"><input name="MyButton1" type=button value="Руcский" onClick=ru()><input name="MyButton4" type=button value="Сначала" onClick=bgn()><br><input name="MyButton3" type=button value="Восстановить" onClick=tld()><input name="MyButton2" type=button value="Сохранить" onClick=tsv()><br><input name="MyButton6" type=button value="Загрузить" onClick=tldp()><input name="MyButton5" type=button value="Выгрузить" onClick=tsvp()></form><br>';
+vcrd();
+unknwi=0;
+knwi=0;
+let schet=0;
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+
+}
+
+function tldp(){
+nm=0;
+let k=vcb.length;
+i=Math.floor(k/50);
+document.getElementById('sts').innerHTML='<form name="load"><input name="button1" value="OK" type="button" onClick=ok()><textarea  name="data1" ></textarea></form>';
+for (j=0;j<=i;j++)
+{
+act[j]=localStorage.getItem(j);
+/*alert( localStorage.getItem('test') ); // 1
+document.getElementById('sv').innerHTML+=" "+act[j];
+*/
+}
+nm=Number(localStorage.getItem("start"));
+vcrd();
+unknwi=0;
+knwi=0;
+let schet=0;
+
+cntrl.innerHTML= '<br><br><form name="knf">'+knwi+' <input name="MyButton1" type=button value="Знаю" onClick=knw()><input name="MyButton2" type=button value="Нет" onClick=unknw()> '+unknwi+'<br>'+schet+' <input name="MyButton3" type=button value="Дальше>>" onClick=cncl()>'+nm+'</form><br>';
+// отладка alert(document.cookie); // ...; my%20name=John%20Smith
+// отладка alert("Восстанавливаем из кук "+document.cookie);
+//act= Number.parseInt(cookie.get("act"));
+//// отладка alert("Восстанавливаем из кук число: "+act);
+}
+document.body.style.zoom = document.documentElement.clientHeight/250;
+window.onload=vis;
+</script>
+</header>
+<body>
+<center>
+<div id="sts">
+<div id="opt"></div>
+<table>
+<tr><td>
+<div class="bordercard" id="card"></div>
+</td></tr>
+</table>
+<div id="cntrl"></div>
+<div id="sv"></div>
+<div id="unsv"></div>
+</div>
+</center>
+</body>
+</html>
