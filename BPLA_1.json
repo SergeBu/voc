@@ -1,0 +1,4058 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "BPLA",
+    "owner": "RKV",
+    "description": "BPLA model",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Rudakov"
+      },
+      {
+        "name": "Kilmishkin"
+      },
+      {
+        "name": "Vasuykova"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 2,
+        "title": "BPLA-model-gd",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.5.0",
+        "cells": [
+          {
+            "position": {
+              "x": -459.00000000000045,
+              "y": -169.9999999999991
+            },
+            "size": {
+              "width": 1720,
+              "height": 590
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "60171766-d70c-49d6-92b2-656cf1796f86",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -1289.0000000000032,
+              "y": 449.9999999999942
+            },
+            "size": {
+              "width": 2550,
+              "height": 230
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "8e006062-235c-4251-a08f-b52c267320e0",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -1289,
+              "y": 721.9999999999998
+            },
+            "size": {
+              "width": 2550,
+              "height": 470
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "94f60f06-323d-4309-8978-da82135f2cb5",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 210,
+              "y": 1280
+            },
+            "size": {
+              "width": 320,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Датчики навигации (GPS, ГЛОНАСС)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 5,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+                },
+                {
+                  "group": "right",
+                  "id": "2ad02dcb-b9d1-427f-b695-e976bcd2b7ae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "30c6c05a-fa23-409e-b645-e3028c4e5765"
+                },
+                {
+                  "group": "left",
+                  "id": "1db48ab0-6b0f-4715-a95b-2b27fdefd06b"
+                }
+              ]
+            },
+            "id": "d75be2cb-bbfa-4698-bc59-fb499b0b2bc6",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Датчики навигации (GPS, ГЛОНАСС)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "3480fa33-b0db-4ca2-8866-17a8acbc06e5",
+                  "title": "Демонтаж датчика, его подмена",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Демонтаж датчика, его подмена",
+                  "mitigation": "Привязка «серийный номер датчика → порт/линия»",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 3,
+                  "score": "100"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 608.25,
+              "y": 1252
+            },
+            "size": {
+              "width": 180,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Датчики ориентации \n(акселерометр, гироскоп)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 6,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+                },
+                {
+                  "group": "right",
+                  "id": "2ad02dcb-b9d1-427f-b695-e976bcd2b7ae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "30c6c05a-fa23-409e-b645-e3028c4e5765"
+                },
+                {
+                  "group": "left",
+                  "id": "1db48ab0-6b0f-4715-a95b-2b27fdefd06b"
+                }
+              ]
+            },
+            "id": "13b479c6-06ef-4e25-a71b-b1c0d9c000c6",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Датчики ориентации \n(акселерометр, гироскоп)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "0df0e229-ad34-44f1-9cb1-7b34b4355b27",
+                  "title": "Демонтаж датчика, его подмена",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Демонтаж датчика, его подмена",
+                  "mitigation": "Привязка «серийный номер датчика → порт/линия»",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 2,
+                  "score": "100"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 844,
+              "y": 1252
+            },
+            "size": {
+              "width": 210,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Датчики состояния (высота, \nскорость, \nтемпература двигателя)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 7,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+                },
+                {
+                  "group": "right",
+                  "id": "2ad02dcb-b9d1-427f-b695-e976bcd2b7ae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "30c6c05a-fa23-409e-b645-e3028c4e5765"
+                },
+                {
+                  "group": "left",
+                  "id": "1db48ab0-6b0f-4715-a95b-2b27fdefd06b"
+                }
+              ]
+            },
+            "id": "edee4f67-294c-4b98-b5e1-27a5c0291457",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Датчики состояния (высота, \nскорость, \nтемпература двигателя)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "c37eb28b-3c8b-442b-bb8c-33b88fd84713",
+                  "title": "Демонтаж датчика, его подмена",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Демонтаж датчика, его подмена",
+                  "mitigation": "Привязка «серийный номер датчика → порт/линия»",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 1,
+                  "score": "100"
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Данные, команды",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Данные, команды"
+            ],
+            "id": "cf9d9659-6e05-4680-aab3-70b908fef853",
+            "source": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+            },
+            "target": {
+              "cell": "d01a1d8e-07c1-4e18-881b-a27b35c1b9d7",
+              "port": "2ad02dcb-b9d1-427f-b695-e976bcd2b7ae"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "События, тренды",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "События, тренды"
+            ],
+            "id": "9daf5003-7e3b-44b4-9eb1-c5c88dfc39f6",
+            "source": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "target": {
+              "cell": "6c0c5749-2992-4d0e-a7a2-91c5b74602bb",
+              "port": "814bb144-751c-497a-a1d2-bc97ff769887"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "22297280-869c-429b-ae13-715699cb9623",
+                  "title": "Вмешательство в полевые линии",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Вмешательство в полевые линии",
+                  "mitigation": "MAC/HMAC на прикладном уровне для своих протоколов, пломбирование/защита линий",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 14,
+                  "score": "35"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения"
+            ],
+            "id": "77cd76a2-761d-4ab2-8a55-faa71362e787",
+            "source": {
+              "cell": "13b479c6-06ef-4e25-a71b-b1c0d9c000c6",
+              "port": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+            },
+            "target": {
+              "cell": "d135ec10-e010-4512-891a-ad57c59840a9",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ключи/секреты",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "46f75200-6fec-4c55-ab50-59c93c3ee77a",
+                  "title": "Утечка ключей",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Утечка ключей",
+                  "mitigation": "Использование протоколов передачи данных с шифрованием",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 17,
+                  "score": "95"
+                }
+              ]
+            },
+            "labels": [
+              "Ключи/секреты"
+            ],
+            "id": "2f9e642c-cbeb-438f-bde0-7ece2062e013",
+            "source": {
+              "cell": "18961a00-0145-4e48-ac69-875053e61fa9",
+              "port": "129554a7-d046-47f0-87b8-0e554c5a1442"
+            },
+            "target": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": 820
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Управляющие сигналы",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "17c54261-42c1-478d-96b5-d8e920941058",
+                  "title": "Вмешательство в полевые линии, линии связи с актуаторами",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Вмешательство в полевые линии, линии связи с актуаторами",
+                  "mitigation": "MAC/HMAC на прикладном уровне для своих протоколов, пломбирование/защита линий",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 19,
+                  "score": "45"
+                }
+              ]
+            },
+            "labels": [
+              "Управляющие сигналы"
+            ],
+            "id": "6630e207-69b4-4213-be25-e42158927336",
+            "source": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "target": {
+              "cell": "94b4a873-5c88-475a-9a16-f0f849210158",
+              "port": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+            },
+            "vertices": [
+              {
+                "x": 920,
+                "y": 880
+              },
+              {
+                "x": 1161,
+                "y": 1010
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Информация о процессе\nпередачи данных",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "cd459601-d8e6-4fa2-93a4-0bea5d689f46",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 31,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Информация о процессе\nпередачи данных"
+            ],
+            "id": "858b583a-110d-4c3f-ba36-e0494b944f62",
+            "source": {
+              "cell": "0c4f71b1-0db3-4d5c-b211-de8e834e3a28",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "target": {
+              "cell": "6529ce55-3284-4c0e-9a23-f2fddbbdffd5",
+              "port": "129554a7-d046-47f0-87b8-0e554c5a1442"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Команды, сообщения, данные",
+              "description": "Всё, что может быть передано пользователю и от него",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fc1045af-3744-416b-8802-0df78a585e39",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 32,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Команды, сообщения, данные"
+            ],
+            "id": "49d6f2b2-e764-45ed-bc71-926673027d85",
+            "source": {
+              "cell": "c31613a3-cbfd-473c-8035-ac443a1c79c4",
+              "port": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+            },
+            "target": {
+              "cell": "0c4f71b1-0db3-4d5c-b211-de8e834e3a28",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Данные",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "33afe3ea-9627-4401-905f-622d38652fc2",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 33,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Данные"
+            ],
+            "id": "5c22012c-9f0d-4c04-b333-8e2563bde851",
+            "source": {
+              "cell": "c31613a3-cbfd-473c-8035-ac443a1c79c4",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "target": {
+              "cell": "43125688-9f81-4642-8308-974dc0f8d00f",
+              "port": "814bb144-751c-497a-a1d2-bc97ff769887"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Данные и команды\n(передача по Ethernet)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6851a30a-955a-4b20-8fd1-234689ad099e",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 34,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Данные и команды\n(передача по Ethernet)"
+            ],
+            "id": "41cb00a9-efc2-4fb9-816c-e41e47ef4bce",
+            "source": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+            },
+            "target": {
+              "cell": "04002c99-377f-43be-afef-58f84fad8f08",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 640
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Данные и команды\n(TLS 1.3 / MQTT v5)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9d2f46f8-2e77-4449-8f3d-f5d1bb6f3625",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 35,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Данные и команды\n(TLS 1.3 / MQTT v5)"
+            ],
+            "id": "63d559d0-d94c-4bda-84ea-e780138d82ce",
+            "source": {
+              "cell": "c31613a3-cbfd-473c-8035-ac443a1c79c4",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "target": {
+              "cell": "04002c99-377f-43be-afef-58f84fad8f08",
+              "port": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения,\nвычисления",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "93cb6830-c69e-4a36-9f1e-a4113df5249b",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 36,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения,\nвычисления"
+            ],
+            "id": "296ca3aa-6eb8-48b5-ba52-87299ab136dc",
+            "source": {
+              "cell": "d135ec10-e010-4512-891a-ad57c59840a9",
+              "port": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+            },
+            "target": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения,\nвычисления",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "31432e4e-0f2c-4077-a612-26d9cb4759d6",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 38,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения,\nвычисления"
+            ],
+            "id": "de9ef35b-c12b-48c0-913f-43c9dae3aa20",
+            "source": {
+              "cell": "5bfe94c7-ac9a-4821-9c45-7190c5b93826",
+              "port": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+            },
+            "target": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Данные, команды\n(HTTPS / TLS 1.3)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "08867f6f-6fe4-4f1c-ad4c-ef4f1242d79c",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 29,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Данные, команды\n(HTTPS / TLS 1.3)"
+            ],
+            "id": "5af73121-9a7f-451d-8440-c4509b6bf281",
+            "source": {
+              "cell": "56cac464-9fb9-43ad-8b36-217dc661a1c1",
+              "port": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+            },
+            "target": {
+              "cell": "0c4f71b1-0db3-4d5c-b211-de8e834e3a28",
+              "port": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+            },
+            "vertices": [
+              {
+                "x": -830,
+                "y": 20
+              },
+              {
+                "x": -650,
+                "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Подписанные образы",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Подписанные образы"
+            ],
+            "id": "5d49381a-04aa-4a0c-9795-2711d94689ab",
+            "source": {
+              "cell": "f9222b56-7029-46e7-a527-8261d2705f13",
+              "port": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+            },
+            "target": {
+              "cell": "04002c99-377f-43be-afef-58f84fad8f08",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "vertices": [
+              {
+                "x": 1380,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Данные о времени",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Данные о времени"
+            ],
+            "id": "ab1c8268-60e5-4ed4-b1c4-5f833a20399d",
+            "source": {
+              "cell": "1a966c6c-2968-4b19-93f5-e9aad40745ad",
+              "port": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+            },
+            "target": {
+              "cell": "04002c99-377f-43be-afef-58f84fad8f08",
+              "port": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+            },
+            "vertices": [
+              {
+                "x": 1530,
+                "y": 430
+              },
+              {
+                "x": 1420,
+                "y": 610
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения,\nвычисления",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "59e79fa0-13a3-4eb4-8e3c-1a9a7d63c45e",
+                  "title": "Утечка данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Утечка данных при передаче",
+                  "mitigation": "Использование протоколов с шифрованием при передаче данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 37,
+                  "score": "70"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения,\nвычисления"
+            ],
+            "id": "ece84470-b6bd-4643-b700-c31aa7a8b937",
+            "source": {
+              "cell": "1a12cc50-6518-459c-a8c2-84612dec4819",
+              "port": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+            },
+            "target": {
+              "cell": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4f0ffa95-440e-4d68-8754-f06ea8c47457",
+                  "title": "Вмешательство в полевые линии",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Вмешательство в полевые линии",
+                  "mitigation": "MAC/HMAC на прикладном уровне для своих протоколов, пломбирование/защита линий",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 13,
+                  "score": "35"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения"
+            ],
+            "id": "390be3e9-d670-4ad3-8c53-f004ed14fc81",
+            "source": {
+              "cell": "13b479c6-06ef-4e25-a71b-b1c0d9c000c6",
+              "port": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+            },
+            "target": {
+              "cell": "1a12cc50-6518-459c-a8c2-84612dec4819",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "60a915eb-ff5b-4787-b5a6-c4470c889b18",
+                  "title": "Вмешательство в полевые линии",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Вмешательство в полевые линии",
+                  "mitigation": "MAC/HMAC на прикладном уровне для своих протоколов, пломбирование/защита линий",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 12,
+                  "score": "35"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения"
+            ],
+            "id": "3f30d9e2-372d-4242-8963-895108afd5c8",
+            "source": {
+              "cell": "d75be2cb-bbfa-4698-bc59-fb499b0b2bc6",
+              "port": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+            },
+            "target": {
+              "cell": "d135ec10-e010-4512-891a-ad57c59840a9",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "2198a58d-1cf5-41dd-90c8-7ed2e20c710b",
+                  "title": "Вмешательство в полевые линии",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Вмешательство в полевые линии",
+                  "mitigation": "MAC/HMAC на прикладном уровне для своих протоколов, пломбирование/защита линий",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 9,
+                  "score": "45"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения"
+            ],
+            "id": "c88a1025-d33a-4c11-87a6-5abd5fa26459",
+            "source": {
+              "cell": "edee4f67-294c-4b98-b5e1-27a5c0291457",
+              "port": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+            },
+            "target": {
+              "cell": "5bfe94c7-ac9a-4821-9c45-7190c5b93826",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Измерения",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "14d309b6-8732-4b1e-ba3a-21df367f48bb",
+                  "title": "Вмешательство в полевые линии",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Вмешательство в полевые линии",
+                  "mitigation": "MAC/HMAC на прикладном уровне для своих протоколов, пломбирование/защита линий",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 15,
+                  "score": "35"
+                }
+              ]
+            },
+            "labels": [
+              "Измерения"
+            ],
+            "id": "48d90c65-1856-4ff7-8c8e-16ccce6423f1",
+            "source": {
+              "cell": "d75be2cb-bbfa-4698-bc59-fb499b0b2bc6",
+              "port": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+            },
+            "target": {
+              "cell": "1a12cc50-6518-459c-a8c2-84612dec4819",
+              "port": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 150,
+              "y": 755
+            },
+            "size": {
+              "width": 250,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Наземная станция управления"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53ffff42-0c2d-4171-bf66-01a9a7b1283f"
+                },
+                {
+                  "group": "right",
+                  "id": "2ad02dcb-b9d1-427f-b695-e976bcd2b7ae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "30c6c05a-fa23-409e-b645-e3028c4e5765"
+                },
+                {
+                  "group": "left",
+                  "id": "1db48ab0-6b0f-4715-a95b-2b27fdefd06b"
+                }
+              ]
+            },
+            "id": "d01a1d8e-07c1-4e18-881b-a27b35c1b9d7",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Наземная станция управления",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "b1a08ae7-1ad8-43cf-ab38-d77284adba23",
+                  "title": "Некорректное локальное управление",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Нарушение работы наземной станции управления злоумышленником",
+                  "mitigation": "Настройка прав доступа к наземной станции управлениия, использованние доверенной загрузки ПО",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 4,
+                  "score": "20"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 400,
+              "y": 910
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "STM32F407 -\nконтроллер"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 12,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "d135ec10-e010-4512-891a-ad57c59840a9",
+            "data": {
+              "type": "tm.Process",
+              "name": "STM32F407 -\nконтроллер",
+              "description": "Собирает данные, обрабатывает, агрегирует, производит анализ, передаёт арбитру",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "ab3eaa57-69b1-4677-b041-3390344fca0b",
+                  "title": "Эксплуатация бага прошивки",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Эксплуатация бага прошивки",
+                  "mitigation": "Использование актуальных прошивок, отключение лишних сервисов, ревью критического пути",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 23,
+                  "score": "85"
+                },
+                {
+                  "id": "daae0160-d89f-4929-8cdc-86ad0ab544da",
+                  "title": "Исчерпание ресурсов памяти, процессора",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Исчерпание ресурсов памяти, процессора",
+                  "mitigation": "Выставление приоритетов, ограничений",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 28,
+                  "score": "55"
+                },
+                {
+                  "id": "df556681-15fe-4896-b95b-990b244ce03c",
+                  "title": "Подмена прошивки",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Подмена прошивки",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией, ведение журналов и аудит",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 45,
+                  "score": "75"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 633.25,
+              "y": 910
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "STM32F407 -\nконтроллер"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 13,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "1a12cc50-6518-459c-a8c2-84612dec4819",
+            "data": {
+              "type": "tm.Process",
+              "name": "STM32F407 -\nконтроллер",
+              "description": "Собирает данные, обрабатывает, агрегирует, производит анализ, передаёт арбитру",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "6c86fdfa-ca8d-40cf-89f7-660c46af92b9",
+                  "title": "Эксплуатация бага прошивки",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Эксплуатация бага прошивки",
+                  "mitigation": "Использование актуальных прошивок, отключение лишних сервисов, ревью критического пути",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 24,
+                  "score": "85"
+                },
+                {
+                  "id": "c0caae7f-f4be-40ac-bda5-c9d3fbcef9db",
+                  "title": "Исчерпание ресурсов памяти, процессора",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Исчерпание ресурсов памяти, процессора",
+                  "mitigation": "Выставление приоритетов, ограничений",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 27,
+                  "score": "55"
+                },
+                {
+                  "id": "473c7689-7d56-4ff0-996e-efb435c707e3",
+                  "title": "Подмена прошивки",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Подмена прошивки",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией, ведение журналов и аудит",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 46,
+                  "score": "75"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 854,
+              "y": 910
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "STM32F407 -\nконтроллер"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 14,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "5bfe94c7-ac9a-4821-9c45-7190c5b93826",
+            "data": {
+              "type": "tm.Process",
+              "name": "STM32F407 -\nконтроллер",
+              "description": "Собирает данные, обрабатывает, агрегирует, производит анализ, передаёт арбитру",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "3b3eb95d-6dd3-4856-9389-bba8b6fbb427",
+                  "title": "Эксплуатация бага прошивки",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Эксплуатация бага прошивки",
+                  "mitigation": "Использование актуальных прошивок, отключение лишних сервисов, ревью критического пути",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 25,
+                  "score": "85"
+                },
+                {
+                  "id": "9a3142f9-bcb3-4899-b40a-454141069136",
+                  "title": "Исчерпание ресурсов памяти, процессора",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Исчерпание ресурсов памяти, процессора",
+                  "mitigation": "Выставление приоритетов, ограничений",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 26,
+                  "score": "55"
+                },
+                {
+                  "id": "aa37bb09-9e8e-4a4b-a9f5-b97acefa27ac",
+                  "title": "Подмена прошивки",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Подмена прошивки",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией, ведение журналов и аудит",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 47,
+                  "score": "75"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 643.25,
+              "y": 730
+            },
+            "size": {
+              "width": 110,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Арбитр"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 15,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "a92ac792-68f6-4d62-a9e4-5eda8f61ae48",
+            "data": {
+              "type": "tm.Process",
+              "name": "Арбитр",
+              "description": "Собирает данные, сохраняет, анализирует, принимает решения на основе данных",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "651eca0e-0043-4f92-805d-0645cb1eb400",
+                  "title": "Эксплуатация бага арбитра",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Эксплуатация бага арбитра",
+                  "mitigation": "Использование актуальных прошивок, отключение лишних сервисов, ревью критического пути",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 22,
+                  "score": "80"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1081,
+              "y": 755
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Локальные журналы"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 16,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a3f53b09-9255-4de1-b276-298f5640213a"
+                },
+                {
+                  "group": "right",
+                  "id": "cf32c02a-11c2-4756-a7ed-d5c681497bcb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "5097d9b3-a080-4fbe-8ba5-7f69cbf351cd"
+                },
+                {
+                  "group": "left",
+                  "id": "814bb144-751c-497a-a1d2-bc97ff769887"
+                }
+              ]
+            },
+            "id": "6c0c5749-2992-4d0e-a7a2-91c5b74602bb",
+            "data": {
+              "type": "tm.Store",
+              "name": "Локальные журналы",
+              "description": "Содержат информацию о данных, полученных с системных датчиков, датчиков климата и сельскохозяйственных датчиках",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "e8326d97-f028-4145-a648-8a1f567ec6dc",
+                  "title": "Несанкционированный доступ к данным",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Несанкционированный доступ к данным",
+                  "mitigation": "Настройка прав доступа к данным, шифрование при хранении, мониторинг возможных утечек информации",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 7,
+                  "score": "80"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1300,
+              "y": 840
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Ключи/секреты"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 17,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+                },
+                {
+                  "group": "right",
+                  "id": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02132509-12fa-4138-8647-c45f8883e6cc"
+                },
+                {
+                  "group": "left",
+                  "id": "129554a7-d046-47f0-87b8-0e554c5a1442"
+                }
+              ]
+            },
+            "id": "18961a00-0145-4e48-ac69-875053e61fa9",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Ключи/секреты",
+              "description": "Хранилище или что-то, что позволяет получить ключи/секреты",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "477fbf82-e349-43b1-bfcc-1a71f127a89e",
+                  "title": "Подмена сервиса для работы с ключами",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Подмена сервиса для работы с ключами",
+                  "mitigation": "Использование протоколов связи с взаимной аутентификацией",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 16,
+                  "score": "95"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 260,
+              "y": 475.0000000000002
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Канал связи\n(радиосвязь, \nспутниковая, LTE)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 18,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "04002c99-377f-43be-afef-58f84fad8f08",
+            "data": {
+              "type": "tm.Process",
+              "name": "Канал связи\n(радиосвязь, \nспутниковая, LTE)",
+              "description": "Выполняет передачу данных",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "ad897d33-d3da-4077-a9fa-89844e92e409",
+                  "title": "Эксплуатация уязвимостей протоколов передачи данных",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Эксплуатация уязвимостей протоколов передачи данных",
+                  "mitigation": "Правильная настройка оборудования передачи данных",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 43,
+                  "score": "80"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 260,
+              "y": -20
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "MQTT v5 брокер"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 19,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "c31613a3-cbfd-473c-8035-ac443a1c79c4",
+            "data": {
+              "type": "tm.Process",
+              "name": "MQTT v5 брокер",
+              "description": "Посредник для обмена данными в распределённой системе, выполняет передачу данных",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "4b377925-0b94-487e-8acf-9023119c6a80",
+                  "title": "Перенасыщение MQTT/HTTP",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Перенасыщение MQTT/HTTP",
+                  "mitigation": "Использование квот, лимитов, приоритетов и очередей",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 42,
+                  "score": "60"
+                },
+                {
+                  "id": "32feab2b-a210-46d4-bf51-9bb4bccac0b7",
+                  "title": "Подмена брокера",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Подмена брокера",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией, журналирование событий и аудит",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 44,
+                  "score": "80"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1300,
+              "y": 250
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Сервер времени\n(NTP/PTP)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 20,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+                },
+                {
+                  "group": "right",
+                  "id": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02132509-12fa-4138-8647-c45f8883e6cc"
+                },
+                {
+                  "group": "left",
+                  "id": "129554a7-d046-47f0-87b8-0e554c5a1442"
+                }
+              ]
+            },
+            "id": "1a966c6c-2968-4b19-93f5-e9aad40745ad",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Сервер времени\n(NTP/PTP)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "14e7a11a-68dd-4c1c-80f0-cd95e01d6def",
+                  "title": "Подмена сервиса для работы с временем",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Подмена сервиса для работы с временем",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 20,
+                  "score": "30"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1300,
+              "y": 330
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Сервер обновлений"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 21,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+                },
+                {
+                  "group": "right",
+                  "id": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02132509-12fa-4138-8647-c45f8883e6cc"
+                },
+                {
+                  "group": "left",
+                  "id": "129554a7-d046-47f0-87b8-0e554c5a1442"
+                }
+              ]
+            },
+            "id": "f9222b56-7029-46e7-a527-8261d2705f13",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Сервер обновлений",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "6f63c291-b26a-4f66-a477-e3c80639bd76",
+                  "title": "Подмена сервиса для обновления прошивки",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Подмена сервиса для обновления прошивки",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией, подключение к доверенным серверам",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 21,
+                  "score": "45"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1081,
+              "y": 15
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "RAM"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 22,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a3f53b09-9255-4de1-b276-298f5640213a"
+                },
+                {
+                  "group": "right",
+                  "id": "cf32c02a-11c2-4756-a7ed-d5c681497bcb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "5097d9b3-a080-4fbe-8ba5-7f69cbf351cd"
+                },
+                {
+                  "group": "left",
+                  "id": "814bb144-751c-497a-a1d2-bc97ff769887"
+                }
+              ]
+            },
+            "id": "43125688-9f81-4642-8308-974dc0f8d00f",
+            "data": {
+              "type": "tm.Store",
+              "name": "RAM",
+              "description": "RAM",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "8f2acea4-923c-46a0-a207-c16df898020d",
+                  "title": "Несанкционированный доступ к данным",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Несанкционированный доступ к данным",
+                  "mitigation": "Настройка прав доступа к данным, шифрование при хранении, мониторинг возможных утечек информации",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 8,
+                  "score": "90"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1300,
+              "y": 170
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Сервис уведомлений"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 23,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+                },
+                {
+                  "group": "right",
+                  "id": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02132509-12fa-4138-8647-c45f8883e6cc"
+                },
+                {
+                  "group": "left",
+                  "id": "129554a7-d046-47f0-87b8-0e554c5a1442"
+                }
+              ]
+            },
+            "id": "6529ce55-3284-4c0e-9a23-f2fddbbdffd5",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Сервис уведомлений",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "da51355c-a3f3-4fb7-aede-03ef90a2e74c",
+                  "title": "Получение доступ к логам",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Злоумышленник может получить доступ к секретной информации, если какой-то компонент будет логировать свои события или ориентацию в пространстве",
+                  "mitigation": "Хранить журналы в шифрованном и сжатом виде\nТолько оператор может получить доступ",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 50,
+                  "score": "30"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -398,
+              "y": -20
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Сервис\nуправления /\nAPI"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 24,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1b8a4765-c489-4f72-94db-95ccd341dc34"
+                },
+                {
+                  "group": "right",
+                  "id": "0ce8bfe4-e80c-46dd-83fc-e9a5aa36b7a0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8ba68f18-84d2-415f-97a0-174ae907bda7"
+                },
+                {
+                  "group": "left",
+                  "id": "af76d68f-53ec-4186-9d51-f23f50a8f5a7"
+                }
+              ]
+            },
+            "id": "0c4f71b1-0db3-4d5c-b211-de8e834e3a28",
+            "data": {
+              "type": "tm.Process",
+              "name": "Сервис\nуправления /\nAPI",
+              "description": "Посредник для обмена данными в распределённой системе, выполняет передачу данных",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "54201fb3-37ba-4d3b-a7d4-619803ce5992",
+                  "title": "Перенасыщение MQTT/HTTP",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Перенасыщение MQTT/HTTP",
+                  "mitigation": "Использование квот, лимитов, приоритетов и очередей",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 41,
+                  "score": "60"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -1100,
+              "y": -30
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Оператор"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 25,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+                },
+                {
+                  "group": "right",
+                  "id": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02132509-12fa-4138-8647-c45f8883e6cc"
+                },
+                {
+                  "group": "left",
+                  "id": "129554a7-d046-47f0-87b8-0e554c5a1442"
+                }
+              ]
+            },
+            "id": "56cac464-9fb9-43ad-8b36-217dc661a1c1",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Оператор",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "200b1384-1dd4-4cc4-8674-0a991a927cc0",
+                  "title": "Некорректное управление",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Нарушение работы датчиков/контроллеров/актуаторов с помощью HMI",
+                  "mitigation": "Настройка прав доступа к управлению через клиентские приложения, журналирование действий и их аудит",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 5,
+                  "score": "30"
+                },
+                {
+                  "id": "ea08a8f3-3ac5-4608-9362-b577b698af8a",
+                  "title": "Компрометация клиентского сертификата",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Компрометация клиентского сертификата",
+                  "mitigation": "Использование протоколов с взаимной аутентификацией",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 40,
+                  "score": "75"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -1319.0000000000002,
+              "y": 670
+            },
+            "size": {
+              "width": 2580,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Бортовое оборудование _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 27,
+            "id": "22e37497-d7d9-473b-969d-e4cf1c634110",
+            "data": {
+              "type": "tm.Text",
+              "name": "Бортовое оборудование _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -1319.0000000000002,
+              "y": 1192
+            },
+            "size": {
+              "width": 2580,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Бортовая сеть__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 28,
+            "id": "0efbbf65-f2e2-45ef-8994-ca829074d991",
+            "data": {
+              "type": "tm.Text",
+              "name": "Бортовая сеть__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -1319.0000000000002,
+              "y": 402
+            },
+            "size": {
+              "width": 2580,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Канал связи______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 29,
+            "id": "6f565c35-65ee-4443-a33d-056df50818fa",
+            "data": {
+              "type": "tm.Text",
+              "name": "Канал связи______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -419,
+              "y": -230.00000000001597
+            },
+            "size": {
+              "width": 1660,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Датацентр / облако _____________________________________________________________________________________________________________________________________________________________________________________________________"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 30,
+            "id": "73295530-748e-44b8-8129-9400ba7610d8",
+            "data": {
+              "type": "tm.Text",
+              "name": "Датацентр / облако _____________________________________________________________________________________________________________________________________________________________________________________________________",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -1320,
+              "y": -230.0000000000161
+            },
+            "size": {
+              "width": 820,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Пользователь ________________________________________________________________________________________"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 31,
+            "id": "1ea87ddd-f769-4033-ac3c-40feca72d4fa",
+            "data": {
+              "type": "tm.Text",
+              "name": "Пользователь ________________________________________________________________________________________",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1071,
+              "y": 1280
+            },
+            "size": {
+              "width": 270,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Исполнительные механизмы \n(моторы, сервоприводы, \nшасси)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 32,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a986e526-3b20-40c9-9dce-abefe1932f8d"
+                },
+                {
+                  "group": "right",
+                  "id": "83628a5c-0c6a-45a6-af4b-080fa5fd25ab"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02132509-12fa-4138-8647-c45f8883e6cc"
+                },
+                {
+                  "group": "left",
+                  "id": "129554a7-d046-47f0-87b8-0e554c5a1442"
+                }
+              ]
+            },
+            "id": "94b4a873-5c88-475a-9a16-f0f849210158",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Исполнительные механизмы \n(моторы, сервоприводы, \nшасси)",
+              "description": "Насосы, клапаны, жалюзи, свет",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "06055528-d349-4084-b2bd-5caf594eda9a",
+                  "title": "Подмена актуатора",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Подмена актуатора",
+                  "mitigation": "Привязка «серийный номер датчика → порт/линия»",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 18,
+                  "score": "85"
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          }
+        ],
+        "description": "BPLA model generic diagram"
+      }
+    ],
+    "diagramTop": 8,
+    "reviewer": "Rudakov-Kilmishkin-Vasuykova",
+    "threatTop": 50
+  }
+}
